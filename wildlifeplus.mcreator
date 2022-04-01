@@ -1,0 +1,50 @@
+{
+  "mod_elements": [
+    {
+      "name": "WildlifePlus",
+      "type": "tab",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wildlife_plus"
+    },
+    {
+      "name": "Avocado",
+      "type": "food",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "avocado"
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [],
+  "language_map": {
+    "en_us": {
+      "item.wildlifeplus.avocado": "Avocado",
+      "itemGroup.tabwildlife_plus": "Wildlife+"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": []
+  },
+  "workspaceSettings": {
+    "modid": "wildlifeplus",
+    "modName": "Wildlife+",
+    "version": "1.0.0",
+    "author": "Sauromods",
+    "license": "All Rights Reserved",
+    "disableForgeVersionCheck": true,
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "forge-1.17.1",
+    "credits": "Created by Sauromods - itsakuro \u0026 TheSaxophone",
+    "modElementsPackage": "net.sauromods.wildlifeplus",
+    "lockBaseModFiles": false
+  },
+  "mcreatorVersion": 202100354000
+}

@@ -1,0 +1,22 @@
+modLoader="javafml"
+loaderVersion="[37,)"
+license="All Rights Reserved"
+
+[[mods]]
+modId="wildlifeplus"
+version="1.0.0"
+displayName="Wildlife+"
+credits="Created by Sauromods - itsakuro & TheSaxophone"
+displayURL="https://mcreator.net"
+authors="Sauromods"
+
+[[dependencies.wildlifeplus]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.17.1]"
+    ordering="NONE"
+    side="BOTH"
+
+
+
+
