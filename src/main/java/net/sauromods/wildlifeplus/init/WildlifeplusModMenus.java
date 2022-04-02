@@ -5,6 +5,7 @@
 package net.sauromods.wildlifeplus.init;
 
 import net.sauromods.wildlifeplus.world.inventory.WildpediaGUICapybaraMenu;
+import net.sauromods.wildlifeplus.world.inventory.AnimalBookMenu;
 
 import net.minecraftforge.fmllegacy.network.IContainerFactory;
 import net.minecraftforge.fml.common.Mod;
@@ -20,6 +21,8 @@ import java.util.ArrayList;
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
 public class WildlifeplusModMenus {
 	private static final List<MenuType<?>> REGISTRY = new ArrayList<>();
+	public static final MenuType<AnimalBookMenu> ANIMAL_BOOK = register("animal_book",
+			(id, inv, extraData) -> new AnimalBookMenu(id, inv, extraData));
 	public static final MenuType<WildpediaGUICapybaraMenu> WILDPEDIA_GUI_CAPYBARA = register("wildpedia_gui_capybara",
 			(id, inv, extraData) -> new WildpediaGUICapybaraMenu(id, inv, extraData));
 

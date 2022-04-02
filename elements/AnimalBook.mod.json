@@ -1,0 +1,57 @@
+{
+  "_fv": 24,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 176,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "text": "Dog Be Shitting",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Dog Be Shitting",
+          "x": 174,
+          "y": 184
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Click to roast Jellybean",
+          "width": 150,
+          "height": 20,
+          "name": "Click to roast Jellybean",
+          "x": 137,
+          "y": 44
+        }
+      },
+      {
+        "type": "textfield",
+        "data": {
+          "placeholder": "",
+          "width": 120,
+          "height": 20,
+          "name": "AAAAAAAAAAAAAA",
+          "x": 158,
+          "y": 67
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}
