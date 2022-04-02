@@ -26,9 +26,11 @@ public class WildpediaGUICapybaraScreen extends AbstractContainerScreen<Wildpedi
 		this.y = container.y;
 		this.z = container.z;
 		this.entity = container.entity;
-		this.imageWidth = 176;
-		this.imageHeight = 166;
+		this.imageWidth = 270;
+		this.imageHeight = 170;
 	}
+
+	private static final ResourceLocation texture = new ResourceLocation("wildlifeplus:textures/wildpedia_gui_capybara.png");
 
 	@Override
 	public void render(PoseStack ms, int mouseX, int mouseY, float partialTicks) {
@@ -42,12 +44,14 @@ public class WildpediaGUICapybaraScreen extends AbstractContainerScreen<Wildpedi
 		RenderSystem.setShaderColor(1, 1, 1, 1);
 		RenderSystem.enableBlend();
 		RenderSystem.defaultBlendFunc();
+		RenderSystem.setShaderTexture(0, texture);
+		this.blit(ms, this.leftPos, this.topPos, 0, 0, this.imageWidth, this.imageHeight, this.imageWidth, this.imageHeight);
 
 		RenderSystem.setShaderTexture(0, new ResourceLocation("wildlifeplus:textures/wildpedia_gui.png"));
-		this.blit(ms, this.leftPos + -47, this.topPos + -9, 0, 0, 271, 180, 271, 180);
+		this.blit(ms, this.leftPos + 0, this.topPos + -7, 0, 0, 271, 180, 271, 180);
 
 		RenderSystem.setShaderTexture(0, new ResourceLocation("wildlifeplus:textures/wdpd_capybara.png"));
-		this.blit(ms, this.leftPos + -20, this.topPos + 36, 0, 0, 91, 86, 91, 86);
+		this.blit(ms, this.leftPos + 26, this.topPos + 38, 0, 0, 91, 86, 91, 86);
 
 		RenderSystem.disableBlend();
 	}
@@ -68,15 +72,15 @@ public class WildpediaGUICapybaraScreen extends AbstractContainerScreen<Wildpedi
 
 	@Override
 	protected void renderLabels(PoseStack poseStack, int mouseX, int mouseY) {
-		this.font.draw(poseStack, "Capybara", 127, 15, -13421773);
-		this.font.draw(poseStack, "The capybara is a", 99, 42, -13421773);
-		this.font.draw(poseStack, "giant cavy rodent", 99, 54, -13421773);
-		this.font.draw(poseStack, "native to South", 99, 67, -13421773);
-		this.font.draw(poseStack, "America. It is the", 99, 80, -13421773);
-		this.font.draw(poseStack, "largest living", 99, 93, -13421773);
-		this.font.draw(poseStack, "rodent and a", 99, 106, -13421773);
-		this.font.draw(poseStack, "member of the genus", 99, 119, -13421773);
-		this.font.draw(poseStack, "Hydrochoerus.", 99, 132, -13421773);
+		this.font.draw(poseStack, "Capybara", 174, 17, -13421773);
+		this.font.draw(poseStack, "The capybara is a", 146, 44, -13421773);
+		this.font.draw(poseStack, "giant cavy rodent", 146, 56, -13421773);
+		this.font.draw(poseStack, "native to South", 146, 69, -13421773);
+		this.font.draw(poseStack, "America. It is the", 146, 82, -13421773);
+		this.font.draw(poseStack, "largest living", 146, 95, -13421773);
+		this.font.draw(poseStack, "rodent and a", 146, 108, -13421773);
+		this.font.draw(poseStack, "member of the genus", 146, 121, -13421773);
+		this.font.draw(poseStack, "Hydrochoerus.", 146, 134, -13421773);
 	}
 
 	@Override

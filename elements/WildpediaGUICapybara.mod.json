@@ -3,11 +3,11 @@
   "_type": "gui",
   "definition": {
     "type": 0,
-    "width": 176,
-    "height": 166,
+    "width": 270,
+    "height": 170,
     "inventoryOffsetX": 0,
     "inventoryOffsetY": 0,
-    "renderBgLayer": false,
+    "renderBgLayer": true,
     "doesPauseGame": false,
     "components": [
       {
