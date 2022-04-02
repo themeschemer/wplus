@@ -23,6 +23,14 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "capybara"
+    },
+    {
+      "name": "AnimalBook",
+      "type": "gui",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "animal_book"
     }
   ],
   "variable_elements": [],
