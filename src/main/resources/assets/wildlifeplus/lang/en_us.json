@@ -1,8 +1,12 @@
 {
+  "block.wildlifeplus.blackberry_seedling": "Blackberry Shrub",
   "item.wildlifeplus.capybara_spawn_egg": "Capybara Spawn Egg",
+  "block.wildlifeplus.blackberry_shrub": "Blackberry Shrub",
+  "block.wildlifeplus.blackberry_sapling": "Blackberry Shrub",
   "item.wildlifeplus.avocado": "Avocado",
   "entity.wildlifeplus.capybara": "Capybara",
   "itemGroup.tabwildlife_plus": "Wildlife+",
+  "block.wildlifeplus.blackberry_bush": "Blackberry Shrub",
   "item.wildlifeplus.blackberries": "Blackberries",
   "item.wildlifeplus.wildpedia": "Wildpedia"
 }

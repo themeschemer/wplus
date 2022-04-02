@@ -1,0 +1,7 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "wildlifeplus:blocks/blackberry_stage2",
+    "particle": "wildlifeplus:blocks/blackberry_stage2"
+  }
+}

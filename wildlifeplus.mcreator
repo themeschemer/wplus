@@ -83,16 +83,52 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "blackberries"
+    },
+    {
+      "name": "BlackberryShrub",
+      "type": "block",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blackberry_shrub"
+    },
+    {
+      "name": "BlackberrySapling",
+      "type": "block",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blackberry_sapling"
+    },
+    {
+      "name": "BlackberrySeedling",
+      "type": "block",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blackberry_seedling"
+    },
+    {
+      "name": "BlackberryBush",
+      "type": "block",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blackberry_bush"
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
     "en_us": {
+      "block.wildlifeplus.blackberry_seedling": "Blackberry Shrub",
       "item.wildlifeplus.capybara_spawn_egg": "Capybara Spawn Egg",
+      "block.wildlifeplus.blackberry_shrub": "Blackberry Shrub",
+      "block.wildlifeplus.blackberry_sapling": "Blackberry Shrub",
       "item.wildlifeplus.avocado": "Avocado",
       "entity.wildlifeplus.capybara": "Capybara",
       "itemGroup.tabwildlife_plus": "Wildlife+",
+      "block.wildlifeplus.blackberry_bush": "Blackberry Shrub",
       "item.wildlifeplus.blackberries": "Blackberries",
       "item.wildlifeplus.wildpedia": "Wildpedia"
     }
