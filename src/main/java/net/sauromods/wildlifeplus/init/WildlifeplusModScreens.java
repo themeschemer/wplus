@@ -5,7 +5,6 @@
 package net.sauromods.wildlifeplus.init;
 
 import net.sauromods.wildlifeplus.client.gui.WildpediaGUICapybaraScreen;
-import net.sauromods.wildlifeplus.client.gui.AnimalBookScreen;
 
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.common.Mod;
@@ -19,7 +18,6 @@ public class WildlifeplusModScreens {
 	@SubscribeEvent
 	public static void clientLoad(FMLClientSetupEvent event) {
 		event.enqueueWork(() -> {
-			MenuScreens.register(WildlifeplusModMenus.ANIMAL_BOOK, AnimalBookScreen::new);
 			MenuScreens.register(WildlifeplusModMenus.WILDPEDIA_GUI_CAPYBARA, WildpediaGUICapybaraScreen::new);
 		});
 	}
