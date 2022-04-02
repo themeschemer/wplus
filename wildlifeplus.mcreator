@@ -75,6 +75,14 @@
           }
         ]
       }
+    },
+    {
+      "name": "Blackberries",
+      "type": "food",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blackberries"
     }
   ],
   "variable_elements": [],
@@ -85,6 +93,7 @@
       "item.wildlifeplus.avocado": "Avocado",
       "entity.wildlifeplus.capybara": "Capybara",
       "itemGroup.tabwildlife_plus": "Wildlife+",
+      "item.wildlifeplus.blackberries": "Blackberries",
       "item.wildlifeplus.wildpedia": "Wildpedia"
     }
   },
