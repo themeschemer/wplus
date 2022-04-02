@@ -1,4 +1,6 @@
 {
+  "item.wildlifeplus.capybara_spawn_egg": "Capybara Spawn Egg",
   "item.wildlifeplus.avocado": "Avocado",
+  "entity.wildlifeplus.capybara": "Capybara",
   "itemGroup.tabwildlife_plus": "Wildlife+"
 }

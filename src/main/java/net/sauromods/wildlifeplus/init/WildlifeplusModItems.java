@@ -10,6 +10,7 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.event.RegistryEvent;
 
+import net.minecraft.world.item.SpawnEggItem;
 import net.minecraft.world.item.Item;
 
 import java.util.List;
@@ -19,6 +20,9 @@ import java.util.ArrayList;
 public class WildlifeplusModItems {
 	private static final List<Item> REGISTRY = new ArrayList<>();
 	public static final Item AVOCADO = register(new AvocadoItem());
+	public static final Item CAPYBARA = register(
+			new SpawnEggItem(WildlifeplusModEntities.CAPYBARA, -6132165, -11126499, new Item.Properties().tab(WildlifeplusModTabs.TAB_WILDLIFE_PLUS))
+					.setRegistryName("capybara_spawn_egg"));
 
 	private static Item register(Item item) {
 		REGISTRY.add(item);
