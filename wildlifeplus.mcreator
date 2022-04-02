@@ -28,7 +28,7 @@
       "name": "AnimalBook",
       "type": "gui",
       "sortid": 4,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "animal_book"
     },
@@ -36,7 +36,7 @@
       "name": "Wildpedia",
       "type": "item",
       "sortid": 4,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "wildpedia"
     },
@@ -44,7 +44,7 @@
       "name": "WildpediaGUICapybara",
       "type": "gui",
       "sortid": 5,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "wildpedia_gui_capybara"
     },
@@ -52,7 +52,7 @@
       "name": "CapybaraRightClick",
       "type": "procedure",
       "sortid": 6,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "capybara_right_click",
       "metadata": {
