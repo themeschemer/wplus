@@ -4,6 +4,7 @@
  */
 package net.sauromods.wildlifeplus.init;
 
+import net.sauromods.wildlifeplus.item.WildpediaItem;
 import net.sauromods.wildlifeplus.item.AvocadoItem;
 
 import net.minecraftforge.fml.common.Mod;
@@ -23,6 +24,7 @@ public class WildlifeplusModItems {
 	public static final Item CAPYBARA = register(
 			new SpawnEggItem(WildlifeplusModEntities.CAPYBARA, -6132165, -11126499, new Item.Properties().tab(WildlifeplusModTabs.TAB_WILDLIFE_PLUS))
 					.setRegistryName("capybara_spawn_egg"));
+	public static final Item WILDPEDIA = register(new WildpediaItem());
 
 	private static Item register(Item item) {
 		REGISTRY.add(item);

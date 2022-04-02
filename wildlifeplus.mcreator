@@ -23,6 +23,58 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "capybara"
+    },
+    {
+      "name": "Wildpedia",
+      "type": "item",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wildpedia"
+    },
+    {
+      "name": "WildpediaGUICapybara",
+      "type": "gui",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wildpedia_gui_capybara"
+    },
+    {
+      "name": "CapybaraRightClick",
+      "type": "procedure",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "capybara_right_click",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -32,7 +84,8 @@
       "item.wildlifeplus.capybara_spawn_egg": "Capybara Spawn Egg",
       "item.wildlifeplus.avocado": "Avocado",
       "entity.wildlifeplus.capybara": "Capybara",
-      "itemGroup.tabwildlife_plus": "Wildlife+"
+      "itemGroup.tabwildlife_plus": "Wildlife+",
+      "item.wildlifeplus.wildpedia": "Wildpedia"
     }
   },
   "foldersRoot": {

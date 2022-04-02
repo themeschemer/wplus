@@ -1,6 +1,7 @@
 
 package net.sauromods.wildlifeplus.entity;
 
+import net.sauromods.wildlifeplus.procedures.CapybaraRightClickProcedure;
 import net.sauromods.wildlifeplus.init.WildlifeplusModEntities;
 
 import net.minecraftforge.registries.ForgeRegistries;
@@ -39,6 +40,7 @@ import net.minecraft.world.entity.MobSpawnType;
 import net.minecraft.world.entity.MobCategory;
 import net.minecraft.world.entity.Mob;
 import net.minecraft.world.entity.EntityType;
+import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.AgeableMob;
 import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.InteractionResult;
@@ -195,6 +197,13 @@ public class CapybaraEntity extends TamableAnimal {
 					this.setPersistenceRequired();
 			}
 		}
+		double x = this.getX();
+		double y = this.getY();
+		double z = this.getZ();
+		Entity entity = this;
+		Level world = this.level;
+
+		CapybaraRightClickProcedure.execute(world, x, y, z, entity, sourceentity);
 		return retval;
 	}
 
