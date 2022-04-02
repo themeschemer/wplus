@@ -1,0 +1,159 @@
+{
+  "_fv": 24,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 270,
+    "height": 170,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "image",
+        "data": {
+          "image": "wildpedia_gui.png",
+          "use1Xscale": false,
+          "name": "wildpedia_gui.png",
+          "x": 78,
+          "y": 28
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "wdpd_capybara.png",
+          "use1Xscale": true,
+          "name": "wdpd_capybara.png",
+          "x": 105,
+          "y": 73
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Capybara",
+          "color": {
+            "value": -13421773,
+            "falpha": 0.0
+          },
+          "name": "Capybara",
+          "x": 253,
+          "y": 52
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "The capybara is a",
+          "color": {
+            "value": -13421773,
+            "falpha": 0.0
+          },
+          "name": "The capybara is a",
+          "x": 225,
+          "y": 79
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "giant cavy rodent",
+          "color": {
+            "value": -13421773,
+            "falpha": 0.0
+          },
+          "name": "giant cavy rodent",
+          "x": 225,
+          "y": 91
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "native to South",
+          "color": {
+            "value": -13421773,
+            "falpha": 0.0
+          },
+          "name": "native to South",
+          "x": 225,
+          "y": 104
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "America. It is the",
+          "color": {
+            "value": -13421773,
+            "falpha": 0.0
+          },
+          "name": "America. It is the",
+          "x": 225,
+          "y": 117
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "largest living",
+          "color": {
+            "value": -13421773,
+            "falpha": 0.0
+          },
+          "name": "largest living",
+          "x": 225,
+          "y": 130
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "rodent and a",
+          "color": {
+            "value": -13421773,
+            "falpha": 0.0
+          },
+          "name": "rodent and a",
+          "x": 225,
+          "y": 143
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "member of the genus",
+          "color": {
+            "value": -13421773,
+            "falpha": 0.0
+          },
+          "name": "member of the genus",
+          "x": 225,
+          "y": 156
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Hydrochoerus.",
+          "color": {
+            "value": -13421773,
+            "falpha": 0.0
+          },
+          "name": "Hydrochoerus.",
+          "x": 225,
+          "y": 169
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 15,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}
