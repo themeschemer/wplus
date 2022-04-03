@@ -1,6 +1,8 @@
 
 package net.sauromods.wildlifeplus.block;
 
+import net.sauromods.wildlifeplus.procedures.BlackberryGrowProcedure;
+import net.sauromods.wildlifeplus.procedures.BlackberryBushSlowDownProcedure;
 import net.sauromods.wildlifeplus.init.WildlifeplusModItems;
 import net.sauromods.wildlifeplus.init.WildlifeplusModBlocks;
 import net.sauromods.wildlifeplus.block.entity.BlackberryShrubBlockEntity;
@@ -8,9 +10,6 @@ import net.sauromods.wildlifeplus.block.entity.BlackberryShrubBlockEntity;
 import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.api.distmarker.Dist;
 
-import net.minecraft.world.phys.shapes.VoxelShape;
-import net.minecraft.world.phys.shapes.CollisionContext;
-import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.phys.HitResult;
 import net.minecraft.world.level.storage.loot.LootContext;
 import net.minecraft.world.level.material.MaterialColor;
@@ -25,12 +24,15 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.entity.Entity;
 import net.minecraft.world.MenuProvider;
+import net.minecraft.server.level.ServerLevel;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
 
+import java.util.Random;
 import java.util.List;
 import java.util.Collections;
 
@@ -55,12 +57,6 @@ public class BlackberryShrubBlock extends Block
 	}
 
 	@Override
-	public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
-		Vec3 offset = state.getOffset(world, pos);
-		return box(4, 0, 4, 14, 8, 14).move(offset.x, offset.y, offset.z);
-	}
-
-	@Override
 	public int getFlammability(BlockState state, BlockGetter world, BlockPos pos, Direction face) {
 		return 60;
 	}
@@ -81,6 +77,29 @@ public class BlackberryShrubBlock extends Block
 		if (!dropsOriginal.isEmpty())
 			return dropsOriginal;
 		return Collections.singletonList(new ItemStack(WildlifeplusModItems.BLACKBERRIES));
+	}
+
+	@Override
+	public void onPlace(BlockState blockstate, Level world, BlockPos pos, BlockState oldState, boolean moving) {
+		super.onPlace(blockstate, world, pos, oldState, moving);
+		world.getBlockTicks().scheduleTick(pos, this, 20);
+	}
+
+	@Override
+	public void tick(BlockState blockstate, ServerLevel world, BlockPos pos, Random random) {
+		super.tick(blockstate, world, pos, random);
+		int x = pos.getX();
+		int y = pos.getY();
+		int z = pos.getZ();
+
+		BlackberryGrowProcedure.execute(world, x, y, z);
+		world.getBlockTicks().scheduleTick(pos, this, 20);
+	}
+
+	@Override
+	public void entityInside(BlockState blockstate, Level world, BlockPos pos, Entity entity) {
+		super.entityInside(blockstate, world, pos, entity);
+		BlackberryBushSlowDownProcedure.execute(entity);
 	}
 
 	@Override

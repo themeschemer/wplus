@@ -1,6 +1,7 @@
 
 package net.sauromods.wildlifeplus.block;
 
+import net.sauromods.wildlifeplus.procedures.BlackberryBushSlowDownProcedure;
 import net.sauromods.wildlifeplus.init.WildlifeplusModItems;
 import net.sauromods.wildlifeplus.init.WildlifeplusModBlocks;
 import net.sauromods.wildlifeplus.block.entity.BlackberryBushBlockEntity;
@@ -8,9 +9,6 @@ import net.sauromods.wildlifeplus.block.entity.BlackberryBushBlockEntity;
 import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.api.distmarker.Dist;
 
-import net.minecraft.world.phys.shapes.VoxelShape;
-import net.minecraft.world.phys.shapes.CollisionContext;
-import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.phys.HitResult;
 import net.minecraft.world.level.storage.loot.LootContext;
 import net.minecraft.world.level.material.MaterialColor;
@@ -25,6 +23,7 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.entity.Entity;
 import net.minecraft.world.MenuProvider;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
@@ -55,12 +54,6 @@ public class BlackberryBushBlock extends Block
 	}
 
 	@Override
-	public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
-		Vec3 offset = state.getOffset(world, pos);
-		return box(4, 0, 4, 14, 8, 14).move(offset.x, offset.y, offset.z);
-	}
-
-	@Override
 	public int getFlammability(BlockState state, BlockGetter world, BlockPos pos, Direction face) {
 		return 60;
 	}
@@ -81,6 +74,12 @@ public class BlackberryBushBlock extends Block
 		if (!dropsOriginal.isEmpty())
 			return dropsOriginal;
 		return Collections.singletonList(new ItemStack(WildlifeplusModItems.BLACKBERRIES));
+	}
+
+	@Override
+	public void entityInside(BlockState blockstate, Level world, BlockPos pos, Entity entity) {
+		super.entityInside(blockstate, world, pos, entity);
+		BlackberryBushSlowDownProcedure.execute(entity);
 	}
 
 	@Override
