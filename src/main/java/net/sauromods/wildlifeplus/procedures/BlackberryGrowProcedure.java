@@ -25,7 +25,7 @@ public class BlackberryGrowProcedure {
 							return blockEntity.getTileData().getDouble(tag);
 						return -1;
 					}
-				}.getValue(world, new BlockPos((int) x, (int) y, (int) z), "nwtgGrowthTimer") + 1));
+				}.getValue(world, new BlockPos((int) x, (int) y, (int) z), "blackberryGrowthTimer") + 1));
 			if (world instanceof Level _level)
 				_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 		}
